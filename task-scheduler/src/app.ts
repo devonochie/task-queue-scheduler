@@ -29,6 +29,7 @@ class Application {
             allowedHeaders: ["Content-Type", "Authorization"]
         }))
         this.app.use(express.json())
+        this.app.use(express.static('dist'))
     }
 
     private setupRoutes() {

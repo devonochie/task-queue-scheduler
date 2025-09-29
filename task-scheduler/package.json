@@ -4,6 +4,8 @@
   "main": "server.js",
   "scripts": {
     "tsc": "tsc",
+    "build:ui": "rm -rf dist && cd ../workhorse-ui && npm run build && cp -r dist ../task-scheduler",
+    "deploy:full": "npm run build:ui && git add . && git commit -m uibuild && git push",
     "dev": "ts-node -r tsconfig-paths/register src/server.ts",
     "lint": "eslint .",
     "clean": "rimraf build/",
