@@ -1,20 +1,22 @@
 name: Trigger Render Deployment
+
 on:
   push:
     branches:
       - main
+
 jobs:
   main:
     name: Deploy to Render
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@main #consider using pin for dependabot auto update
+        uses: actions/checkout@v4  # pin latest stable
 
       - name: Create deployment
-        uses: sws2apps/render-deployment@main #consider using pin for dependabot auto update
+        uses: sws2apps/render-deployment@v1.6.0 # example pinned release
         with:
           serviceId: ${{ secrets.RENDER_SERVICE_ID }}
           apiKey: ${{ secrets.RENDER_API_KEY }}
-          node-version: lts/Jod #optional
-          cli-version: 2.2.0 #optional
+          node-version: lts/*  # use latest LTS
+          cli-version: 2.2.0   # pin CLI
