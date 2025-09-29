@@ -16,7 +16,7 @@ jobs:
       - name: Create deployment
         uses: sws2apps/render-deployment@v1.6.0
         with:
-          serviceId: ${{ secrets.RENDER_SERVICE_ID }}
+          serviceId: srv-d3dacn2li9vc73e8va0g 
           apiKey: ${{ secrets.RENDER_API_KEY }}
           multipleDeployment: true  # optional
 
