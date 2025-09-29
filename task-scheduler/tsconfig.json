@@ -3,19 +3,18 @@
   "compilerOptions": {
     "types": ["node"],
     /* Output */
-    "outDir": "./build/",
+    "outDir": "./dist",
+    "rootDir": "./src",
 
     /* Language & Module */
     "target": "ES2022",
-    "lib": ["ES2023", "DOM", "DOM.Iterable"],
+    "lib": ["ES2023"],
     "module": "commonjs",
     "moduleDetection": "force",
-    "allowImportingTsExtensions": true,
-    "isolatedModules": true,
-    "noEmit": true,
 
-    /* JSX (for React) */
-    "jsx": "react-jsx",
+    /* Emission */
+    "noEmit": false,
+    "isolatedModules": true,
 
     /* Interop */
     "esModuleInterop": true,
@@ -35,6 +34,6 @@
     },
     "typeRoots": ["./node_modules/@types", "./src/types"]
   },
-  "include": ["src/**/*", "index.ts", "src/app.ts", "../jv.js", "src/server.ts"],
-  "exclude": ["node_modules", "build", "**/*.test.ts"]
+  "include": ["src/**/*", "src/server.ts"],
+  "exclude": ["node_modules", "dist", "**/*.test.ts"]
 }
