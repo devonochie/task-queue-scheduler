@@ -13,9 +13,11 @@ jobs:
     run: |
      echo "Hello world"
   - name: Now it is
-    run: date
-     echo Date.now()
+    run: |
+     date
+     echo $(date +%s)
   - name: Directory content
-    run: ls -l
-     echo 'dir'
+    run: |
+     ls -l
+     echo "total: $(ls -l)"
   
