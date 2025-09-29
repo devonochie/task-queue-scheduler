@@ -21,7 +21,6 @@
     "@types/cors": "^2.8.19",
     "@types/nodemon": "^3.1.1",
     "bullmq": "^5.58.7",
-    "cors": "^2.8.5",
     "dotenv": "^17.2.2",
     "express": "^5.1.0",
     "ioredis": "^5.8.0",
