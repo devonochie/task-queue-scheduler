@@ -1,5 +1,5 @@
 
-# ✅ Task Queue & Scheduler Backend
+# ✅ Task Queue & Scheduler 
 
 A robust backend system for managing asynchronous jobs, scheduled tasks, retries, and worker monitoring — built with scalability in mind for ERP automation.
 
@@ -56,7 +56,8 @@ Client / ERP / Scheduled Agent
 | Scheduling  | BullMQ Repeatable Jobs / CRON                |
 | Logging     | In-memory / DB / File-based                  |
 | Optional DB | MongoDB /Postgres
-| Deployment  | Render (CI/CD)
+| Deployment  | Render (CI/CD) 
+| Frontend    | React-Vite / Typescript
 
 ---
 
