@@ -55,7 +55,8 @@ Client / ERP / Scheduled Agent
 | Backend API | Node.js / Express / Typescript
 | Scheduling  | BullMQ Repeatable Jobs / CRON                |
 | Logging     | In-memory / DB / File-based                  |
-| Optional DB | MongoDB                         |
+| Optional DB | MongoDB /Postgres
+| Deployment  | Render (CI/CD)
 
 ---
 
@@ -117,7 +118,7 @@ Create a `.env` file:
 ```
 REDIS_HOST=localhost
 REDIS_PORT=6379
-PORT=4000
+PORT=3000
 ```
 
 ### 4️⃣ Start Server & Workers
@@ -128,6 +129,11 @@ npm run dev
 node src/worker.js   # for background workers
 ```
 
+## 🚀 Deployment & CI/CD
+
+- Hosting Platform: **Render**
+- CI/CD: Automatically deployed on every push to `main`
+- Build steps run for both frontend and backend
 ---
 
 ## 🧠 Use Cases
@@ -152,8 +158,9 @@ node src/worker.js   # for background workers
 
 ---
 
-## 👤 Author
-
+## 👤 Author: devonochie
+## 🚀 Live Demo
+[https://your-app-name.onrender.com](https://workhorseui.onrender.com/)
 **GitHub:** [@devonochie](https://github.com/devonochie)
 
 Feel free to fork, contribute, or integrate this into your next ERP system!
