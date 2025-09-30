@@ -2,7 +2,7 @@ import { CreateJobRequest, Job, JobStatus, WorkerStatus } from "@/types/dashboar
 import axios from 'axios'
 
 const axiosInstance = axios.create({
-    baseURL: 'https://task-queue-scheduler.onrender.com',
+    baseURL: 'https://task-queue-scheduler.onrender.com/api',
     withCredentials: true
 })
 
