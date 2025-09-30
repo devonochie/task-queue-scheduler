@@ -1,5 +1,6 @@
-import { JobDocument } from "@/models/Job";
-import { WorkerDocument } from "@/models/Worker";
+import { JobDocument } from "../models/Job";
+import { WorkerDocument } from "../models/Worker";
+
 
 
 declare global {

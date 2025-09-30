@@ -1,6 +1,7 @@
-import { JobModel } from "@/models/Job";
-import { queueManager } from "@/queues/queue";
-import { CreateJobRequest, Job, JobFilter } from "@/types";
+import { JobModel } from "../models/Job"
+import { queueManager } from "../queues/queue"
+import { CreateJobRequest, Job, JobFilter } from "../types"
+
 
 
 export class JobService {

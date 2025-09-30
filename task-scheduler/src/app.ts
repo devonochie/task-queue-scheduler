@@ -3,12 +3,12 @@ dotenv.config()
 
 import express from 'express'
 import cors from 'cors'
+import mongoose from 'mongoose'
+import jobRoutes from './routes/jobs'
+import workerRoutes from './routes/workers'
 import { queueManager } from './queues/queue'
 import { jobProcessors } from './queues/processors'
-import mongoose from 'mongoose'
 import { workerservice } from './services/workerService'
-import workerRoutes from './routes/workers'
-import jobRoutes from './routes/jobs'
 
 
 class Application {

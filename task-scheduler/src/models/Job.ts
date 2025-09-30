@@ -1,5 +1,5 @@
-import { JobLog, JobStatus } from '@/types';
 import mongoose , { Schema, Document } from 'mongoose'
+import { JobLog, JobStatus } from '../types';
 
 export interface JobDocument extends Document {
     id: string;

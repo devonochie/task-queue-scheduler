@@ -1,6 +1,6 @@
-import { workerservice } from "@/services/workerService";
 import { tryCatch } from "bullmq";
 import { NextFunction, Request, Response } from "express";
+import { workerservice } from "../services/workerService";
 
 
 

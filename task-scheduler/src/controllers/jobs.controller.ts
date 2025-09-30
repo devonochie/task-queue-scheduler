@@ -1,7 +1,7 @@
-import { JobModel } from "@/models/Job";
-import { jobService } from "@/services/jobService";
-import { CreateJobRequest, JobFilter } from "@/types";
-import { NextFunction, Request, Response } from "express";
+import { NextFunction, Request, Response } from "express"
+import { CreateJobRequest, JobFilter } from "../types"
+import { jobService } from "../services/jobService"
+import { JobModel } from "../models/Job"
 
 
 export class JobController {

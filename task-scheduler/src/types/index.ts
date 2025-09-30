@@ -1,4 +1,3 @@
-// src/types/index.ts
 export type JobStatus = "pending" | "running" | "completed" | "failed";
 export type WorkerStatus = "active" | "idle" | "failed";
 

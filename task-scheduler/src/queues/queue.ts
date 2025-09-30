@@ -1,6 +1,6 @@
-import { JobModel } from '@/models/Job'
-import { RedisClient } from '@/services/redisService'
 import { Queue, Job as BullJob, Worker } from 'bullmq'
+import { RedisClient } from '../services/redisService'
+import { JobModel } from '../models/Job'
 
 
 class QueueManager {

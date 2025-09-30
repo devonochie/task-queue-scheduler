@@ -1,5 +1,5 @@
-import { WorkerModel } from "@/models/Worker";
-import { Worker, WorkerStatus } from "@/types";
+import { WorkerModel } from "../models/Worker";
+import { Worker, WorkerStatus } from "../types";
 
 
 export class WorkerService {

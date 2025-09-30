@@ -1,42 +1,14 @@
 {
-  "$schema": "https://json.schemastore.org/tsconfig",
   "compilerOptions": {
-    "types": ["node"],
-    /* Output */
+    "target": "ES2022",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
     "outDir": "./dist",
     "rootDir": "./src",
-
-    /* Language & Module */
-    "target": "ES2022",
-    "lib": ["ES2023", "DOM", "DOM.Iterable"],
-    "module": "commonjs",
-    "moduleDetection": "force",
-    "allowImportingTsExtensions": true,
-    "isolatedModules": true,
-    "noEmit": true,
-
-    /* JSX (for React) */
-    "jsx": "react-jsx",
-
-    /* Interop */
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
-
-    /* Linting & Strictness */
     "strict": true,
-    "noUnusedLocals": false,
-    "noUnusedParameters": false,
-    "noImplicitReturns": false,
-    "noFallthroughCasesInSwitch": true,
-
-    /* Path Aliases */
-    "baseUrl": ".",
-    "paths": {
-      "@/*": ["./src/*"]
-    },
-    "typeRoots": ["./node_modules/@types", "./src/types"]
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true
   },
-  "include": ["src/**/*", "index.ts", "src/app.ts", "../jv.js", "src/server.ts"],
-  "exclude": ["node_modules", "dist", "**/*.test.ts"]
+  "include": ["src"]
 }
-

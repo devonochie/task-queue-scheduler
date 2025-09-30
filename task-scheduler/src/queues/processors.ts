@@ -1,5 +1,5 @@
-import { sendEmail } from '@/services/emailService';
 import { Job as BullJob } from 'bullmq';
+import { sendEmail } from '../services/emailService';
 
 
 export const jobProcessors = {
